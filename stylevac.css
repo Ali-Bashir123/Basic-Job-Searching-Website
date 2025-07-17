@@ -1,0 +1,85 @@
+
+.vacancy {
+    margin-bottom: 20px; 
+}
+
+.vacancy h4 {
+    margin-bottom: 5px; 
+    cursor: pointer;
+}
+
+.vacancy-details {
+    display: none; /* Hide additional information by default */
+}
+
+.vacancy-details.visible {
+    display: block; /* Show additional information when visible class is applied */
+}
+
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #1D3461; 
+}
+
+
+.card {
+    background-color: #6290C8; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; 
+    margin: 20px; 
+}
+
+.card h3 {
+    margin-top: 0; 
+}
+
+/* Styles for form inputs and submit button */
+input[type="text"],
+input[type="submit"] {
+    padding: 10px; 
+    margin: 5px; 
+    border: 1px solid #829CBC; 
+    border-radius: 5px; 
+}
+
+input[type="submit"] {
+    background-color: #333; /* Set background colour for submit button */
+    color: #fff; 
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* when on hover for submit button change colour*/
+}
+
+
+#vacancies {
+    margin-top: 10px; 
+}
+
+/* Styles for individual vacancies */
+#vacancies .vacancy {
+    margin-bottom: 10px; /* Add margin below each vacancy */
+    padding: 10px; 
+    background-color: #829CBC; 
+    border-radius: 5px; 
+}
+
+#vacancies .vacancy h4 {
+    margin-top: 0; 
+    margin-bottom: 20px; /* Add margin below vacancy titles */
+    font-size: 1.2em; 
+}
+
+
+#jobDetails {
+    margin-top: 20px; 
+}
+
+#jobDetails h4 {
+    margin-top: 0; 
+}

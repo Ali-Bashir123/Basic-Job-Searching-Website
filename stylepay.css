@@ -1,0 +1,55 @@
+.calculator {
+    margin: 50px auto; /* Center the calculator horizontally and provide top margin */
+    width: 80%; 
+    max-width: 600px; 
+    padding: 20px; /* Add padding inside the calculator */
+    border: 1px solid #1D3461; 
+    border-radius: 5px; /* Add border for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth look */
+    background-color: #6290C8; 
+}
+
+.calculator-inputs {
+    margin-bottom: 20px; 
+}
+
+.inputs {
+    margin-bottom: 10px; /* Add bottom margin to separate input fields */
+}
+
+.results {
+    display: none; /* Hide initially */
+    margin-top: 20px; /* Add top margin */
+    padding: 20px;
+    border: 3px solid #1D3461;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for detail effects */
+    background-color: #829CBC;
+}
+
+.results h2 {
+    font-size: 20px; /* Set font size for heading */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.results p {
+    margin: 5px 0; 
+}
+
+.error {
+    border: 2px solid red; /* Add red border for error styling */
+}
+
+.warning {
+    color: red; /* Set text color to red */
+    font-size: 0.9em; 
+    margin-top: 5px; 
+    font-weight: bold; /* Make the warning text bold */
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #1D3461; 
+}

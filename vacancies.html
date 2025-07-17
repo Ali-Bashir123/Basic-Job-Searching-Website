@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Vacancies</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Search for job vacancies and apply online">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylevac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="loadTopVacancies()"> <!-- upon loading on page, show top vacancies-->
+    <header>
+        <nav class="navflex">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()"> <!-- uses imported icons for mobile navigation bar-->
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <ul id="myLinks">
+                <li><a href="index.html">Homepage</a> </li>
+                <li><a href="pay.html">Pay Calculator</a> </li>
+                <li><a href="vacancies.html">Vacancy Search</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <!-- Search form for vacancies -->
+        <form id='vacancySearchForm'>
+            <fieldset class="card">
+                <h3>Search for Job Vacancies</h3>
+                <input id='jobTitle' type='text' placeholder='Search for a job vacancy...' required>
+                <br>
+                <input type="submit" value='Search'>
+            </fieldset>
+        </form>
+
+        <!-- Results section -->
+        <section id='result_section' class="card">
+            <h3>Results</h3>
+            <hr>
+            <div id="vacancies"></div>
+            <div id="jobDetails"></div>
+        </section>
+    </main>
+
+    <!-- Nav bar function for collapsing and stacking on mobile devices-->
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="vacancies.js"></script>
+</body>
+
+</html>

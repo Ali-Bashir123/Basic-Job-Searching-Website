@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pay Calculator </title>
+    <meta name="description" content="Calculate your pay based on job title, hourly rate, and hours worked per week">
+    <link rel="stylesheet" href="stylepay.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navflex">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="myLinks">
+                <li><a href="index.html">Homepage</a> </li>
+                <li><a href="pay.html">Pay Calculator</a> </li>
+                <li><a href="vacancies.html">Vacancy Search</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div class="calculator">
+            <h1>Pay Calculator</h1>
+            <div class="calculator-inputs">
+                <!-- Pay Calculator form -->
+                <form id="payment-form">
+
+                    <!-- Job Title inputs -->
+                    <div class="inputs">
+                        <label for ="job-title"> Job Title: </label>
+                        <input type="text" id="job-title" required><br>
+                        <!-- Warning message for job title -->
+                        <span class="warning" id="job-title-warning"></span>
+                    </div>
+
+                    <!-- Pay input -->
+                    <div class="inputs">
+                        <label for ="pay"> Pay: </label>
+                        <input type="text" id="pay" required><br>
+                        <!-- Warning message for pay -->
+                        <span class="warning" id="pay-warning"></span>
+                    </div>
+
+                    <!-- Pay Timeframe selection -->
+                    <div class="inputs">
+                        <label for ="pay-timeframe"> Pay Timeframe: </label>
+                        <select id="pay-timeframe"> 
+                            <option value="per-hour">Per Hour</option>
+                            <option value="per-Week">Per Week</option>
+                            <option value="per-Month">Per Month</option>
+                            <option value="per-Year">Per Year</option>
+                        </select> <br>
+                    </div>
+
+                    <!-- Hours per Week input -->
+                    <div class="inputs">
+                        <label for ="hours-per-week"> Hours per Week: </label>
+                        <input type="text" id="hours-per-week" required> <br>
+                        <span class="warning" id="hours-warning"></span>
+                    </div>
+
+                    
+                    <button type="submit"> Calculate Pay </button>
+                </form>
+            </div>
+            <!-- Results section -->
+            <div class="results">
+                <h2> Salary Details: </h2>
+                <p>Job: <span id="jobTitle"></span></p>
+                <p id="workingDetails"></p>
+                <p>Hourly Amount: <span id="hourlyAmount"></span></p>
+                <p>Weekly Amount: <span id="weeklyAmount"></span></p>
+                <p>Monthly Amount: <span id="monthlyAmount"></span></p>
+                <p>Yearly Amount: <span id="yearlyAmount"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript function for nav bar -->
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="pay.js"></script>
+
+</body>
+</html>

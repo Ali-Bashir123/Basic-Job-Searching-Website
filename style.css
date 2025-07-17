@@ -1,0 +1,177 @@
+/* Main colours */
+:root {
+    --primary-color: #1d3461; 
+    --secondary-color: #1f487e; 
+    --tertiary-color: #376996; 
+    --quaternary-color: #6290c8; 
+    --quinary-color: #829cbc; 
+}
+
+/* vacancies.html and nav bar  */
+
+.job-detail {
+    display: none;
+}
+
+.job-detail.active {
+    display: block;
+    margin-top: 10px;
+}
+
+.navflex {
+    background-color: var(--quaternary-color);
+    width: 100%;
+}
+
+.navflex a {
+    color: #fefee3ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8em 0.5em;
+    display: inline-block;
+}
+
+.navflex li.active {
+    background-color: var(--quinary-color);
+    color: #040F0F;
+}
+
+.navflex li:hover {
+    background-color: var(--secondary-color);
+    color: #040F0F;
+}
+
+.navflex ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Adjust navbar properties for responsive layout */
+.navflex li {
+    flex: 3;
+    text-align: center;
+}
+
+/* Media adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .navflex ul {
+        flex-direction: column;
+    }
+    .navflex li {
+        text-align: center;
+    }
+}
+
+/* general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Results section */
+.results {
+    display: none;
+}
+
+/* more Responsive styles and Adjust styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: calc(100% - 20px);
+    }
+
+    .navflex li {
+        flex: auto;
+        margin: 0;
+    }
+
+    .navflex ul {
+        display: flex;
+        flex-direction: column; /* Change flex direction to vertical when collapsed */
+        align-items: center;
+    }
+}
+
+/* Styles for the menu icon */
+.icon {
+    display: none; /* Initially hide the menu icon */
+}
+
+/* more changes to the media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navflex ul {
+        display: none; /* Hide navigation links by default */
+    }
+    .icon {
+        display: block; 
+    }
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #1D3461; 
+}
+
+
+.main-text {
+    color: rgb(0, 0, 0); 
+    background-color: #6290C8; 
+    padding: 20px; 
+}
